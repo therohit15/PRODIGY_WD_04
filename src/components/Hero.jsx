@@ -1,4 +1,3 @@
-import React from "react";
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/RohitProfile.png";
 import { motion } from "framer-motion";
@@ -24,7 +23,7 @@ const Hero = () => {
               animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
-              Rohit.K
+              ROHIT K
             </motion.h1>
             <motion.span
               variants={container(0.5)}
@@ -41,6 +40,17 @@ const Hero = () => {
               className=" my-2 max-w-xl py-6 font-light tracking-tighter"
             >
               {HERO_CONTENT}
+              <div>
+                <button className="bg-black p-2 rounded-full mt-3 text-xl">
+                  <a
+                    className="btn line-btn-dark btn-icon btn-radius"
+                    href="https://therohit.tiiny.site/"
+                    title=""
+                  >
+                    Download Resume
+                  </a>
+                </button>
+              </div>
             </motion.p>
           </div>
         </div>
